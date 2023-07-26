@@ -3,7 +3,7 @@ import pandas as pd
 import shutil
 
 
-csv_file = "epileptic_records.csv"
+csv_file = "epileptic_records2.csv"
 df = pd.read_csv(csv_file)
 file_names_list = df["filepath"].tolist()
 
