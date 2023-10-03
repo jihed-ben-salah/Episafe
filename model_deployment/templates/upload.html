@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Dataset</title>
+</head>
+<body>
+    <h1>Upload a Dataset</h1>
+    <p>Upload a dataset file in CSV format for prediction:</p>
+
+    <!-- Create a form for file upload -->
+    <form method="POST" action="/predict" enctype="multipart/form-data">
+        <input type="file" name="csv_file" accept=".csv" required>
+        <input type="submit" value="Upload and Predict">
+    </form>
+    
+    <div id="prediction-result">
+        <!-- Display prediction results here (if any) -->
+    </div>
+</body>
+</html>
